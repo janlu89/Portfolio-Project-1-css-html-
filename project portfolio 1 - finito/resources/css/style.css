@@ -1,0 +1,825 @@
+/** Mobile default stylying (GLOBAL DEFAULT)**/
+
+/* Prevent adjustments of font size after orientation specifically for IE and windows phone */
+
+html {
+
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+}
+
+/** apply a natural box model layout to all elements **/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.index {
+    
+    /**---------FONT FAMILY -----------**/
+    font-family: arial, sans-serif;
+    letter-spacing: 0.7px;
+}
+
+/**-------HOME PAGE SECTION START---------**/
+.headerC {
+     
+    position: relative;
+    /*background-image: url(/resources/img/backgrond_home.jpg);*/
+    background: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(87, 84, 84, 0.85)),url(/vendors/img/backgrond_home.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+    padding: 0;
+    /*background-color: rgba(38, 2, 38, 0.82);*/
+
+	min-height: 100vh;
+    box-sizing: content-box;
+    
+    
+}
+    
+    
+
+/**-------NAVIGATION BAR START---------**/
+.navC {
+    
+    box-sizing: content-box;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to top left, rgb(219, 219, 219),rgb(0, 0, 0));
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 0 7vh;
+}
+
+
+
+#identityC {
+    
+    display: inline;
+    margin: 1vh 3vh;
+    font-size: 0.6em;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    
+}
+
+#profileC {
+    
+    float: left;
+    color: white;
+    margin-top: 2.5vh;
+    margin-right: 10px;
+    font-size: 3em;
+}
+
+#profileC:hover {
+    
+    cursor: pointer;
+    color: rgb(41, 41, 41);
+}
+
+.socialBtn  {
+    
+    width: 100px;
+    display: inline-block;
+    padding-top: 2vh
+    
+}
+
+.socialBtn button {
+    
+    margin: 0 7px 7px 7px;
+    border-radius: 100%;
+    height: 33px;
+    width: 33px;
+    background-color: rgba(255, 240, 240, 0);
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+
+.socialBtn button:hover {
+    
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    border-color: rgb(41, 41, 41);
+    
+}
+
+.socialIcon {
+    
+    font-size: 2.2em;
+    color: white;
+}
+
+.fa-linkedin {
+    
+    text-align: left;
+   
+}
+/**-------NAVIGATION MENU START---------**/
+#navBtn {
+   display: none;
+    
+}
+
+#check {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ nav {
+    display: gri;
+}
+
+
+#menuC {
+    
+    position: relative;
+    float: right;
+    margin: 2.5vh 3vh;
+    font-size: 0.5em;
+}
+
+#listC {
+    
+    list-style: none;
+    
+    
+}
+
+#listC li {
+    
+    display: inline;
+    padding: 0 7px;
+    font-size: 2.5em;
+    
+}
+
+#listC li a:hover {
+    
+    color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+
+#listC li a {
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+#listC li a:hover {
+    
+    color: rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+/**--------- NAVIGATION BAR FINISH ---------**/
+
+/**---------- HOME PAGE START ----------**/
+
+#homeBox {
+    
+    position: absolute;
+    box-sizing: border-box;
+    
+    width: 70vw;
+    min-height: 70vh;
+    height: auto;
+    
+    margin: 20vh 14vw 10vh 15vw;
+    text-align: center;
+    
+    color: white;
+}
+
+.myFace {
+    
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    border: 3px solid white;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(87, 84, 84));
+    
+}
+
+/**-------------- MY NAME TEXT BOX --------------**/
+.introBox {
+    
+    margin: 20px 0 10px 0;
+    
+}
+                
+
+.myNane { 
+
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    
+}
+                    
+.linea {
+    
+    width: 300px;
+    margin: 10px auto 30px auto;
+    border: solid 3px;
+    border-radius: 20px;
+    
+}
+                    
+.skills {
+    
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+/**---------- HOME PAGE ENDS ----------**/
+
+
+/**---------- ABOUT PAGE START ----------**/
+
+#bioC {
+    
+    margin: 0 20px;
+    display: grid;
+    justify-content: center;
+    height: auto;
+    
+}
+/**---------- TITLE BOX START ----------**/
+.titleBox {
+    
+    
+}
+
+.sectionTitle {
+    text-align: center;
+    font-family: fantasy;
+    
+}
+
+.starLine {
+    
+    width: 300px;
+    margin: 10px auto 30px auto;
+    border: solid 3px;
+    border-radius: 20px;
+}
+
+/**---------- DOUBLE BOX START ----------**/
+.bigDoubleBox {
+    
+    text-align: left;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-around;
+
+}
+
+.firstInnerBox {
+    box-sizing: content-box;
+    width: 45vw;
+}
+
+.secondInnerBox {
+
+    box-sizing: content-box;
+    width: 45vw;
+}
+
+.titleList {
+    
+    
+}
+
+
+.bioList {
+    
+    
+}
+/**---------- ABOUT PAGE ENDS ----------**/
+
+
+
+
+/**---------- PROJECT PAGE START ----------**/
+#projectC {
+    
+    background: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(87, 84, 84, 0.85)),url(/vendors/img/project_background.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+    padding: 0 20px;
+    display: grid;
+    justify-content: center;
+    height: 90vh;
+    
+}
+
+/**---------- PROJECT PAGE ENDS ----------**/
+
+
+/**---------- CONTACT PAGE START ----------**/
+#contact {
+    
+    position: relative;
+    box-sizing: content-box;
+    height: 84vh;
+    width: 90.5vw;
+    box-sizing: border-box;
+    margin: 10px 4vw;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact .titleBox {
+    
+    margin-bottom: 10vh;
+    
+}
+
+
+#contact label{
+    
+    display: none;
+}
+
+.contactInnerBox {
+    
+    margin: 20px;
+    border-bottom: 1px solid grey;
+    text-align: left;
+    
+}
+
+.form-control {
+    
+    border: none;
+    box-sizing: content-box;
+    width: 100%;
+    
+}
+
+.sendBox {
+    
+    margin-top: 
+}
+
+#sendBtn {
+    
+    box-sizing: content-box;
+    width: 10vw;
+    height: 10vh;
+    align-content: center;
+    border-radius: 9px;
+    color: white;
+    background: linear-gradient(to top right, rgb(108, 108, 108),rgb(0, 0, 0));
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.3em;
+}
+
+#sendBtn:hover {
+    
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(to top right, rgb(172, 172, 172),rgb(0, 0, 0));
+
+    
+}
+
+/**---------- CONTACT PAGE ENDS ----------**/
+
+
+/**---------- FOOTER PAGE START ----------**/
+footer {
+    background: linear-gradient(to top right, rgb(108, 108, 108),rgb(0, 0, 0));
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 100px;
+    
+}
+
+
+
+/**---------- FOOTER PAGE ENDS ----------**/
+
+
+
+
+/*** =============================TABLET STYLES 360PX - RESOLUTION ========================**/
+@media screen and (max-width:1000px) {
+    
+    
+    .index {
+        
+        width: 100%;
+        font-size: 0.8em;
+    
+}
+    
+    
+    
+    /**-------HOME PAGE SECTION START---------**/
+    .headerC {
+
+        height:auto;
+}
+    
+    
+
+/**-------NAVIGATION BAR START---------**/
+    .navC {
+
+        box-sizing: content-box;
+        width: 100%;
+        position: fixed;
+        background: linear-gradient(to top left, rgb(219, 219, 219),rgb(0, 0, 0));
+        z-index: 10;
+        box-sizing: border-box;
+        padding: 0 1vh;
+        min-height: 8vh;
+       
+}
+
+
+
+    #identityC {
+        
+        display: inline-block;
+        width: 70%;
+        margin-right: 15px;
+        margin-left: 0;
+        margin-bottom: 0;
+        
+}
+
+    #profileC {
+        
+        margin-top: 2px;
+        font-size: 35px;
+        font-weight: lighter;
+        margin-bottom: auto;
+
+}
+
+
+    .socialBtn  {
+
+        position:relative;
+        margin-top: 0.5vh;
+        margin-left: 15px;
+        display: inline-block;
+        width: auto;
+        justify-content: center;
+        padding-top: 0;    
+}
+
+    .socialBtn button {
+
+        height: 38px;
+        width: 38px;
+        border: 3px solid white;
+        margin-bottom: 0;
+}
+
+
+    .socialIcon {
+
+        font-size: 25px;
+}
+
+    .fa-linkedin {
+
+        position: relative;
+        left: -1px;
+
+}
+/**-------NAVIGATION MENU START---------**/
+    #navBtn {
+        
+        display: inline-block;
+        float: right;
+        position: relative;
+        text-align: center;
+        background: linear-gradient(to top left, rgb(105, 105, 105),rgb(0, 0, 0));
+        width: 10vw;
+        color: silver;
+        font-size: 3.5em;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+        box-sizing: content-box;
+        padding:0 50px 0 50px;
+        border-radius: 20px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+
+
+    #navBtn:hover {
+        
+        background: linear-gradient(to top left, rgb(196, 193, 193),rgb(51, 51, 51));
+        color: black;
+        
+    }
+    
+    #check {
+        display: none;
+        
+        
+    }
+    
+    input[type=checkbox]:checked ~ #menuC {
+    display: grid;
+    }
+    
+    #menuC {
+        
+        display: none;
+        position: relative;
+        margin: 0;
+        background: linear-gradient(to top left, rgb(29, 29, 29),rgb(51, 51, 51));
+        font-size: 1.5em;
+        width: 100vw;
+        left: -1px;
+        right: -1px;
+}
+
+    
+    #listC {
+        
+        display: grid;
+        margin: 0;
+        padding: 0;
+    
+}
+
+
+    #listC li {
+        
+        text-align: left;
+        font-size: 1em;
+        border-bottom: 1px solid white;
+        margin: 0;
+        padding: 30px;
+        width: 100vw;
+    
+}
+
+        
+    #listC li:hover {
+        
+        background: linear-gradient(to top left, rgb(147, 147, 147),rgb(51, 51, 51));
+    
+        color: black;
+
+}
+
+/**--------- NAVIGATION BAR FINISH ---------**/
+
+    #homeBox{
+        position: relative;
+        margin-top: 0;
+        padding-top: 20vh;
+    }
+    
+    #bioC {
+        position: relative;
+    }
+   
+    
+    
+}
+/*** =============================MOBILE STYLES  - RESOLUTION ========================**/
+@media screen and (max-width:600px){
+
+
+.index {
+    
+    /**---------FONT FAMILY -----------**/
+    
+}
+
+/**-------HOME PAGE SECTION START---------**/
+.headerC {
+     
+  height: auto;
+    
+}
+    
+    
+
+/**-------NAVIGATION BAR START---------**/
+.navC {
+
+   
+}
+
+
+
+#identityC {
+    display: inline;
+    
+  
+    
+}
+
+#profileC {
+    font-size: 20px;
+    margin:20px 0 0 0;
+   
+}
+
+#profileC:hover {
+    
+   
+}
+
+.socialBtn  {
+    
+    margin: 15px 0 0 3px;
+}
+
+.socialBtn button {
+    
+    margin: 0;
+    width: 30px;
+    height: 30px;
+        
+        
+   
+    
+}
+
+.socialBtn button:hover {
+    
+   
+    
+}
+
+.socialIcon {
+    font-size: 18px;
+    
+}
+
+.fa-linkedin {
+    
+    
+    
+   
+}
+/**-------NAVIGATION MENU START---------**/
+#navBtn {
+    margin: 12px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 7px;
+  
+}
+
+#check {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ nav {
+    display: grid;
+}
+
+
+/**---------- HOME PAGE ENDS ----------**/
+
+
+/**---------- ABOUT PAGE START ----------**/
+
+#bioC {
+    
+    height: auto;
+    
+}
+/**---------- TITLE BOX START ----------**/
+
+/**---------- DOUBLE BOX START ----------**/
+.bigDoubleBox {
+    
+    display: grid;
+    text-align: left;
+}
+
+.firstInnerBox {
+   width: 80vw;
+}
+
+.secondInnerBox {
+ width: 80vw;
+}
+
+.titleList {
+    text-align: center;
+    
+}
+
+
+.bioList {
+    
+    
+}
+/**---------- ABOUT PAGE ENDS ----------**/
+
+
+
+
+/**---------- PROJECT PAGE START ----------**/
+
+#projectC {
+    height: auto;
+   
+    
+}
+
+/**---------- PROJECT PAGE ENDS ----------**/
+
+
+/**---------- CONTACT PAGE START ----------**/
+#contact {
+    
+    
+}
+
+#contact .titleBox {
+    
+    
+    
+}
+
+
+#contact label{
+    
+    
+}
+
+.contactInnerBox {
+    
+   
+    
+}
+
+.form-control {
+    
+ 
+    
+}
+
+.sendBox {
+    
+    
+}
+
+#sendBtn {
+    
+    width: 100px;
+    height: 50px;
+  
+}
+
+#sendBtn:hover {
+    
+ 
+    
+}
+
+/**---------- CONTACT PAGE ENDS ----------**/
+
+
+/**---------- FOOTER PAGE START ----------**/
+footer {
+}
+
+
+
+/**---------- FOOTER PAGE ENDS ----------**/
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px){
+    
+    
+}
